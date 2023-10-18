@@ -11,7 +11,7 @@ int printf_string(va_list val)
 	int i;
 	int length;
 
-	str = va_arg("val, char");
+	str = va_arg(val, char);
 	if(str == NULL)
 	{
 		str = "(null)";
