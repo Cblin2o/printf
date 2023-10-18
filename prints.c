@@ -7,15 +7,15 @@
 
 int printf_string(va_list val)
 {
-	char *srt;
+	char *str;
 	int i;
 	int length;
 
-	str = va_arg("val, char");
+	str = va_arg(val, "char");
 	if(str == NULL)
 	{
 		str = "(null)";
-		length = _strlen(srt);
+		length = _strlen(str);
 		for ( i = 0; i < length; i++)
 			putchar(str[1]);
 		return (length);

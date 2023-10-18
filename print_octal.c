@@ -28,7 +28,7 @@ int print_oct(va_list val)
 		tem = tem / 8;
 	}
 	for (i = count - 1; i >= 0; i--)
-		_putchar(array[i] - '0';
+		_putchar(array[i] - '0');
 	free(array);
 	return (count);
 }	
