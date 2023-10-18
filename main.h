@@ -2,7 +2,6 @@
 #define MAIN_H
 #include <stdio.h>
 #include <stdlib.h>
-#include <stadarg.h>
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
