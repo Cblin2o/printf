@@ -10,7 +10,7 @@ int print_HEX(va_list val)
 {
         int i, count = 0;
         int *array;
-        unsigned int num = va_arg(val, unsigned int);
+        unsigned int num = va_args(val, unsigned int);
         unsigned int tem = num;
 
         while (num / 16 != 0)
@@ -21,7 +21,7 @@ int print_HEX(va_list val)
         count++;
         array = malloc(sizeof(int) * count);
         if (array == NULL)
-                return (NULL);
+                return (null);
         for (i = 0; i < count; i++)
         {
                 array[i] = tem % 16;

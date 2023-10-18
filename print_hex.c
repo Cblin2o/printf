@@ -21,7 +21,7 @@ int print_hex(va_list val)
         count++;
         array = malloc(sizeof(int) * count);
         if (array == NULL)
-                return (NULL);
+                return (null);
         for (i = 0; i < count; i++)
         {
                 array[i] = tem % 16;
