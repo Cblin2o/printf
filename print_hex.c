@@ -13,15 +13,15 @@ int print_hex(va_list val)
         unsigned int num = va_arg(val, unsigned int);
         unsigned int tem = num;
 
-        while (num / 16 != 0)
+	while (num / 16 != 0)
         {
                 num = num / 16;
                 count++;
         }
         count++;
-        array = malloc(sizeof(int) * count);
+        array = malloc(sizeof(int)*count);
         if (array == NULL)
-                return (null);
+                return (NULL);
         for (i = 0; i < count; i++)
         {
                 array[i] = tem % 16;
