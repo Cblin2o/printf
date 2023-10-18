@@ -21,7 +21,7 @@ int printf_int(va_list args)
 		num = -num ;
 		n = - n;
 		last = -last;
-		i++
+		i++;
 	}
 	if (num > 0) 
 	{
@@ -44,7 +44,7 @@ int printf_int(va_list args)
 
 	return (i);
 }	
-include "main.h"
+#include "main.h"
 
 /**
  * printf_int - print integer
@@ -54,7 +54,7 @@ include "main.h"
 
 int printf_dec(va_list args)
 {
-        int n = va_arg(arg, int);
+        int n = va_arg(args, int);
         int num, last = n % 10, digit , exp = 1;
         int i = 1;
 
@@ -67,7 +67,7 @@ int printf_dec(va_list args)
                 num = -num ;
                 n = - n;
                 last = -last;
-                i++
+                i++;
         }
         if (num > 0)
         {

@@ -7,7 +7,7 @@
 
 int printf_string(va_list val)
 {
-	char *srt;
+	char *str;
 	int i;
 	int length;
 
@@ -15,7 +15,7 @@ int printf_string(va_list val)
 	if(str == NULL)
 	{
 		str = "(null)";
-		length = _strlen(srt);
+		length = _strlen(str);
 		for ( i = 0; i < length; i++)
 			putchar(str[1]);
 		return (length);
