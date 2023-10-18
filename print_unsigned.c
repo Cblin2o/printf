@@ -21,7 +21,7 @@ int printf_unsigned(va_list args)
                 num = -num ;
                 n = - n;
                 last = -last;
-                i++
+                i++;
         }
         if (num > 0)
         {
