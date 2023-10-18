@@ -38,8 +38,7 @@ struct fmt
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
-int handle_print(const char *fmt, int *i,
-va_list list, char buffer[], int flags, int width, int precision, int size);
+int handle_print(const char *fmt, int *i,va_list list, char buffer[], int flags, int width, int precision, int size);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int printf_char(va_list val);
@@ -59,7 +58,6 @@ int print_string(va_list val);
 int print_pointer(va_list val);
 int print_hex_extra(unsigned long int num);
 int print_revs(va_list val);
-int print_string(va_list types, char buffer[],int flags, int width, int precision, int size);
 int print_non_printable(va_list types, char buffer[],int flags, int width, int precision, int size);
 int print_rot13string(va_list types, char buffer[],int flags, int width, int precision, int size);
 
